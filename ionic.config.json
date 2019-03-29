@@ -1,0 +1,8 @@
+{
+  "name": "swiftcare",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "pro_id": "58666a10"
+}
