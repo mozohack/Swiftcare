@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { DetailsProvider } from '../../providers/details/details';
 
 /**
  * Generated class for the AddrepPage page.
@@ -17,7 +18,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class AddrepPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,public detail:DetailsProvider) {
   }
 
   ionViewDidLoad() {

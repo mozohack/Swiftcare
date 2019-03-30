@@ -6,10 +6,38 @@
 -->
 <ion-header>
   <ion-navbar>
-    <ion-title>addrep</ion-title>
+    <ion-title>Add Report Data</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
+
+    <ion-list>
+        <ion-item>
+            ID:{{detail.det.id}}
+          </ion-item>
+
+        <ion-item>
+          <ion-input type="text" placeholder="Heamoglobin"></ion-input>
+        </ion-item><br>
+        <ion-item>
+            <ion-input type="text" placeholder="Calories"></ion-input>
+          </ion-item><br>
+          <ion-item>
+              <ion-input type="text" placeholder="RBC count"></ion-input>
+            </ion-item><br>
+            <ion-item>
+                <ion-input type="text" placeholder="Blood Pressure"></ion-input>
+              </ion-item><br>
+              <ion-item>
+                  <ion-input type="text" placeholder="Sugar"></ion-input>
+                </ion-item><br>
+        
+<br><br>
+          <button ion-button block>Submit</button>
+        
+      
+      </ion-list>
+
 
 </ion-content>

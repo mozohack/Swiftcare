@@ -6,10 +6,25 @@
 -->
 <ion-header>
   <ion-navbar>
-    <ion-title>diagnose</ion-title>
+    <ion-title>Prescription</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
+    <ion-list>
+        <ion-item>
+            ID:{{detail.det.id}}
+          </ion-item>
 
+        <ion-item>
+          <ion-input type="text" placeholder="Desease"></ion-input>
+        </ion-item><br>
+        <ion-item>
+            <ion-textarea style="height:100px" type="text" placeholder="Medicines"></ion-textarea>
+          </ion-item>
+<br><br>
+          <button ion-button block>Submit</button>
+        
+      
+      </ion-list>
 </ion-content>
