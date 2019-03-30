@@ -25,6 +25,7 @@ scan(){
          console.log('Scanned something', text);
          this.qrScanner.hide().then(()=>{
           alert(text);
+          this.navCtrl.push("pdet",{data:text});
           scanSub.unsubscribe();
          })
 
