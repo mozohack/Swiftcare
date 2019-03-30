@@ -8,12 +8,20 @@
   <ion-navbar>
       
     <ion-title style="text-align:center;">Patient Details</ion-title> 
-    
   </ion-navbar>
 </ion-header>
 
 <ion-content>
   <div class="head">
+      <ion-fab top right>
+          <button ion-fab mini><ion-icon name="add"></ion-icon></button>
+          <ion-fab-list>
+            <button (click)="diagnose()" ion-fab><ion-icon name="clipboard"></ion-icon></button>
+            <button (click)="next()" ion-fab><ion-icon name="calendar"></ion-icon></button>
+            <button (click)="addrep()" ion-fab><ion-icon name="add-circle"></ion-icon></button>
+            <button (click)="lastrep()" ion-fab><ion-icon name="undo"></ion-icon></button>
+          </ion-fab-list>
+        </ion-fab>
     
         <img class="doc" src="../assets/imgs/patient.svg">
   </div>

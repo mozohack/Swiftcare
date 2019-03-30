@@ -20,7 +20,8 @@ ion-card-header.card-header.card-header-md{
     background-image: linear-gradient(#2883d2, #3cb1bb);
     
 }
-.button-fab {
+ion-fab {
     z-index: 100;
+    position: fixed!important;
   }
 }

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { DetailsProvider } from '../../providers/details/details';
+
 /**
  * Generated class for the PdetPage page.
  *
@@ -26,6 +27,20 @@ data:any;
     this.detail.det.id=this.data;
 
   }
+
+  diagnose(){
+    this.navCtrl.push("diagnose");
+  }
+  next(){
+    this.navCtrl.push("next");
+  }
+  addrep(){
+    this.navCtrl.push("addrep");
+  }
+  lastrep(){
+    this.navCtrl.push("lastrep");
+  }
+  
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad PdetPage');
