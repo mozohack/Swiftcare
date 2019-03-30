@@ -18,3 +18,16 @@
     background: none transparent !important;
     opacity: 0 !important;
   }
+
+  ion-header {
+    .toolbar {
+      position: absolute;
+  
+      .toolbar-background {
+        background: transparent;
+      }
+      .toolbar-title {
+        color: #eaf5fb;
+      }
+    }
+  }
