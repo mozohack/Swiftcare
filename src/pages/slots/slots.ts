@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 
 /**
  * Generated class for the SlotsPage page.
@@ -8,14 +8,12 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  * Ionic pages and navigation.
  */
 
-@IonicPage({
-  name: "slots"
-})
+
 @Component({
   selector: 'page-slots',
   templateUrl: 'slots.html',
 })
-export class SlotsPage {
+export class slots {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }

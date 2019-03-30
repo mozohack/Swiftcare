@@ -18,12 +18,25 @@ import { DetailsProvider } from '../../providers/details/details';
 })
 export class DiagnosePage {
 
+  disease:any=null;
+  meds:any=null;
+
   constructor(public navCtrl: NavController, public navParams: NavParams,public detail:DetailsProvider) {
-    
+
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad DiagnosePage');
   }
-
+  send()
+  {
+    if(this.disease==null || this.meds==null)
+    {
+      alert("Incomplete Data");
+    }
+    else{
+    console.log(this.disease+" idjfid "+this.meds);
+    alert("Prescription Forward Successful!")
+  }
+  }
 }

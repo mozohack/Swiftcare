@@ -11,12 +11,15 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { QRScanner, QRScannerStatus } from '@ionic-native/qr-scanner';
 import { DetailsProvider } from '../providers/details/details';
 import { HttpModule } from '@angular/http';
+import { Calendar } from '@ionic-native/calendar';
+import { slots } from '../pages/slots/slots';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     ListPage,
+    slots
   ],
   imports: [
     BrowserModule,
@@ -27,13 +30,15 @@ import { HttpModule } from '@angular/http';
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    slots
   ],
   providers: [
     StatusBar,
     SplashScreen,
     QRScanner,
     DetailsProvider,
+    Calendar,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
   ]
 })

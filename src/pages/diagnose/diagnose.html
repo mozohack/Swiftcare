@@ -17,13 +17,13 @@
           </ion-item>
 
         <ion-item>
-          <ion-input type="text" placeholder="Desease"></ion-input>
+          <ion-input [(ngModel)]="disease" type="text" placeholder="Desease"></ion-input>
         </ion-item><br>
         <ion-item>
-            <ion-textarea style="height:100px" type="text" placeholder="Medicines"></ion-textarea>
+            <ion-textarea [(ngModel)]="meds" style="height:100px" type="text" placeholder="Medicines"></ion-textarea>
           </ion-item>
 <br><br>
-          <button ion-button block>Submit</button>
+          <button (click)="send()" ion-button block>Submit</button>
         
       
       </ion-list>

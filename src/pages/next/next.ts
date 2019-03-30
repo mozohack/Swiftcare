@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Calendar } from '@ionic-native/calendar';
 
 /**
  * Generated class for the NextPage page.
@@ -17,11 +18,17 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class NextPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,private calendar: Calendar) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad NextPage');
   }
+
+  cal()
+  {this.calendar.createCalendar('MyCalendar').then(
+    (msg) => { console.log(msg); },
+    (err) => { console.log(err); }
+  );}
 
 }
