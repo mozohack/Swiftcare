@@ -4,13 +4,14 @@ page-pdet {
         height: 35%;
         padding: 0px;
         text-align: center;
+        
     }
 .doc{
     
     height:250px;
     width:250px;
-    margin-top:60px;
-    border-radius: 20px!important;
+    
+    // border-radius: 50px;
     
 
 }
@@ -19,4 +20,7 @@ ion-card-header.card-header.card-header-md{
     background-image: linear-gradient(#2883d2, #3cb1bb);
     
 }
+.button-fab {
+    z-index: 100;
+  }
 }

@@ -23,7 +23,7 @@ data:any;
     this.data=navParams.get('data');
     {}
     console.log(this.data);
-    // this.detail.det.id=this.data;
+    this.detail.det.id=this.data;
 
   }
 

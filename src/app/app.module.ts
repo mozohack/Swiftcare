@@ -16,7 +16,7 @@ import { HttpModule } from '@angular/http';
   declarations: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
   ],
   imports: [
     BrowserModule,

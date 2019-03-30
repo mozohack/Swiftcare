@@ -18,13 +18,18 @@
     background: none transparent !important;
     opacity: 0 !important;
   }
+.button-md{
+  background-image: linear-gradient(#2883d2, #3cb1bb);
+  color: #eaf5fb;
 
+}
   ion-header {
     .toolbar {
-      position: absolute;
+      // position: absolute;
   
       .toolbar-background {
-        background: transparent;
+        background-image: linear-gradient(#2883d2, #3cb1bb);
+        
       }
       .toolbar-title {
         color: #eaf5fb;
