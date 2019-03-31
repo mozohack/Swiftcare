@@ -13,7 +13,7 @@ import { slots } from '../pages/slots/slots';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = "ota"//"generic";//"pdet"//HomePage;
+  rootPage: any = HomePage;
 
   pages: Array<{title: string, component: any}>;
 

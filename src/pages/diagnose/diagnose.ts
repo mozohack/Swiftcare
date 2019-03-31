@@ -46,7 +46,7 @@ export class DiagnosePage {
         
 
       }
-      this.http.post("http://localhost:5060/presc",body).subscribe((res)=>{
+      this.http.post("http://infigp.in:5060/presc",body).subscribe((res)=>{
         console.log(res.json());
         this.navCtrl.setRoot("pdet");
       });

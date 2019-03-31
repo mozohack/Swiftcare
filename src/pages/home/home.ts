@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { QRScanner, QRScannerStatus } from '@ionic-native/qr-scanner';
+import { DetailsProvider } from '../../providers/details/details';
 
 @Component({
   selector: 'page-home',
@@ -8,7 +9,7 @@ import { QRScanner, QRScannerStatus } from '@ionic-native/qr-scanner';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController,private qrScanner: QRScanner) {
+  constructor(public navCtrl: NavController,private qrScanner: QRScanner,public detail:DetailsProvider) {
 
   }
 scan(){
@@ -25,7 +26,8 @@ scan(){
          console.log('Scanned something', text);
          this.qrScanner.hide().then(()=>{
           alert(text);
-          this.navCtrl.push("pdet",{data:text});
+          this.detail.id=text;
+          this.navCtrl.push("pdet");
           scanSub.unsubscribe();
          })
 

@@ -20,21 +20,19 @@ import { Http } from '@angular/http';
   templateUrl: 'pdet.html',
 })
 export class PdetPage {
- data:any;
+ id:any;
   constructor(public navCtrl: NavController, public navParams: NavParams,public detail:DetailsProvider,public http: Http) {
-    
-    
-
-    this.data=navParams.get('data');
-    this.data=10987;
+    this.detail.id="010987";
+    // this.data=this.navParams.get('data');
+    // alert(this.data);
     let body={
-      id:this.data
+      id:this.detail.id
     }
-    this.http.post("http://localhost:5060/qr",body).subscribe((res)=>{
+    this.http.post("http://infigp.in:5060/qr",body).subscribe((res)=>{
       console.log(res.json());
       
 
-       this.detail.id=res.json()[0].id;
+      //  this.detail.id=res.json()[0].id;
 
         this.detail.name=res.json()[0].name;
         this.detail.age=res.json()[0].age;

@@ -53,7 +53,7 @@ send()
     insulin:this.insulin
   }
 
-  this.http.post("http://localhost:5060/report",body).subscribe((res)=>{
+  this.http.post("http://infigp.in:5060/report",body).subscribe((res)=>{
     res.json();
     alert("Reports have been updated");
     this.navCtrl.pop();
