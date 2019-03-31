@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { Calendar } from '@ionic-native/calendar';
+import { DatePicker } from '@ionic-native/date-picker';
 
 /**
  * Generated class for the NextPage page.
@@ -18,7 +18,7 @@ import { Calendar } from '@ionic-native/calendar';
 })
 export class NextPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams,private calendar: Calendar) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,private datePicker: DatePicker) {
   }
 
   ionViewDidLoad() {
@@ -26,9 +26,13 @@ export class NextPage {
   }
 
   cal()
-  {this.calendar.createCalendar('MyCalendar').then(
-    (msg) => { console.log(msg); },
-    (err) => { console.log(err); }
+  {this.datePicker.show({
+    date: new Date(),
+    mode: 'date',
+    androidTheme: this.datePicker.ANDROID_THEMES.THEME_HOLO_DARK
+  }).then(
+    date => alert("Appoint ment Fixed."),
+    err => alert("Date Not Available")
   );}
 
 }

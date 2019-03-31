@@ -9,14 +9,19 @@ import { Injectable } from '@angular/core';
 */
 @Injectable()
 export class DetailsProvider {
-det=
-  {
-    id:"011216",
-    name: "Shivang Kaul",
-    bg: "O+",
-    age: 10,
-
-  }
+id:any;
+name:any;
+bg:any;
+age:any;
+mob:any;
+hg:any;
+rbc:any;
+wbc:any;
+bp:any;
+insulin:any;
+dis1:any;
+dis2:any;
+dis3:any;
 
   constructor(public http: Http) {
     console.log('Hello DetailsProvider Provider');

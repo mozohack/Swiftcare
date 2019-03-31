@@ -14,27 +14,36 @@
 
     <ion-list>
         <ion-item>
-            ID:{{detail.det.id}}
+            ID:{{detail.id}}
           </ion-item>
 
         <ion-item>
-          <ion-input type="text" placeholder="Heamoglobin"></ion-input>
+          <ion-label floating>Haemoglobin</ion-label>
+          <ion-input type="text" [ngModel]="hg" placeholder="Heamoglobin"></ion-input>
         </ion-item><br>
         <ion-item>
-            <ion-input type="text" placeholder="Calories"></ion-input>
+            <ion-label floating>WBC Count</ion-label>
+
+            <ion-input type="text" [ngModel]="wbc" placeholder="WBC Count"></ion-input>
           </ion-item><br>
           <ion-item>
-              <ion-input type="text" placeholder="RBC count"></ion-input>
+          <ion-label floating>RBC Count</ion-label>
+
+              <ion-input type="text" [ngModel]="rbc" placeholder="RBC count"></ion-input>
             </ion-item><br>
             <ion-item>
-                <ion-input type="text" placeholder="Blood Pressure"></ion-input>
+          <ion-label floating>Blood Pressure</ion-label>
+
+                <ion-input type="text" [ngModel]="bp" placeholder="Blood Pressure"></ion-input>
               </ion-item><br>
               <ion-item>
-                  <ion-input type="text" placeholder="Sugar"></ion-input>
+          <ion-label floating>Insulin</ion-label>
+
+                  <ion-input type="text" [ngModel]="insulin" placeholder="Insulin"></ion-input>
                 </ion-item><br>
         
 <br><br>
-          <button ion-button block>Submit</button>
+          <button (click)="send()" ion-button block>Submit</button>
         
       
       </ion-list>

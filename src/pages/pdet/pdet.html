@@ -33,40 +33,28 @@
     <ion-list>
       <ion-item>
         <ion-icon name="cart" item-start></ion-icon>
-        ID: {{detail.det.id}}
+        ID: {{detail.id}}
       </ion-item>
   
       <ion-item>
         <ion-icon name="medical" item-start></ion-icon>
-        Name: {{detail.det.name}}
+        Name: {{detail.name}}
       </ion-item>
   
       <ion-item>
         <ion-icon name="cafe" item-start></ion-icon>
-        Blood Group : {{detail.det.blood}}
+        Mobile : {{detail.mob}}
       </ion-item>
       <ion-item>
           <ion-icon name="medical" item-start></ion-icon>
-          Name: {{detail.det.name}}
+          Age: {{detail.age}}
         </ion-item>
     
         <ion-item>
           <ion-icon name="cafe" item-start></ion-icon>
-          Blood Group : {{detail.det.blood}}
-        </ion-item>
-        <ion-item>
-            <ion-icon name="medical" item-start></ion-icon>
-            Name: {{detail.det.name}}
-          </ion-item>
-      
-          <ion-item>
-            <ion-icon name="cafe" item-start></ion-icon>
-            Blood Group : {{detail.det.blood}}
-          </ion-item>
-  
-      
-  
-    </ion-list>
+          Blood Group : {{detail.bg}}
+        </ion-item>   
+      </ion-list>
 
     
   </ion-card>
@@ -78,36 +66,28 @@
       <ion-list>
         <ion-item>
           <ion-icon name="cart" item-start></ion-icon>
-          Haemoglobin {{detail.det.id}}
+          Haemoglobin {{detail.hg}}
         </ion-item>
     
         <ion-item>
           <ion-icon name="medical" item-start></ion-icon>
-          Cholestrol {{detail.det.name}}
+          WBC Count : {{detail.wbc}}
         </ion-item>
     
         <ion-item>
           <ion-icon name="cafe" item-start></ion-icon>
-          RBC Count : {{detail.det.blood}}
+          RBC Count : {{detail.rbc}}
         </ion-item>
         <ion-item>
             <ion-icon name="medical" item-start></ion-icon>
-            WBC Count : {{detail.det.name}}
+            Blood Pressure : {{detail.bp}}
           </ion-item>
       
           <ion-item>
             <ion-icon name="cafe" item-start></ion-icon>
-            Blood Group : {{detail.det.blood}}
+            Insulin : {{detail.insulin}}
           </ion-item>
-          <ion-item>
-              <ion-icon name="medical" item-start></ion-icon>
-              Name: {{detail.det.name}}
-            </ion-item>
-        
-            <ion-item>
-              <ion-icon name="cafe" item-start></ion-icon>
-              Blood Group : {{detail.det.blood}}
-            </ion-item>
+         
     
         
     
@@ -123,20 +103,23 @@
         <ion-list>
           <ion-item>
             <ion-icon name="cart" item-start></ion-icon>
-            ID: {{detail.det.id}}
+            ID: {{detail.id}}
           </ion-item>
       
           <ion-item>
             <ion-icon name="medical" item-start></ion-icon>
-            Desease 1: {{detail.det.name}}
+            Desease 1: {{detail.dis1}}
           </ion-item>
       
           <ion-item>
             <ion-icon name="cafe" item-start></ion-icon>
-            Desease 2 : {{detail.det.blood}}
+            Desease 2 : {{detail.dis2}}
           </ion-item>
           
-      
+          <ion-item>
+            <ion-icon name="cafe" item-start></ion-icon>
+            Desease 3 : {{detail.dis3}}
+          </ion-item>
           
       
         </ion-list>
